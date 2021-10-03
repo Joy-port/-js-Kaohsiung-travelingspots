@@ -1,0 +1,88 @@
+---
+title: Kaohsiung Find Spots | 高雄旅遊網站
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="bg">
+  <h1 class="logo"><a href="#">高雄旅遊網</a></h1>
+  <select class="select-group" name="select district" id="select-district">
+    <option selected disabled>-- 請選擇行政區 --</option>
+    <option value="苓雅區">苓雅區</option>
+    <option value="三民區">三民區</option>
+    <option value="新興區">新興區</option>
+  </select>
+  <div class="tabs-group">
+    <h3 class="tabs-title">熱門行政區</h3>
+      <ul class="tabs-list">
+        <li><a href="#" data-type="tab" data-district="苓雅區">苓雅區</a></li>
+        <li><a href="#" data-type="tab" data-district="三民區">三民區</a></li>
+        <li><a href="#" data-type="tab" data-district="美濃區">美濃區</a></li>
+        <li><a href="#" data-type="tab" data-district="小港區">小港區</a></li>
+      </ul>
+  </div>
+</div>
+<div class="hr"><a href="#district-result"><i class="fas fa-chevron-circle-down"></i></a></div>
+<div class="container" id="district-result">
+  <h2 class="subtitle">三民區</h2>
+  <ul class="card-list" data-aos="fade" data-aos-duration="1000">
+    <li class="card">
+        <div class="card-header" style="background-image:url(https://media.istockphoto.com/photos/ting-kau-bridge-picture-id699971568?b=1&k=20&m=699971568&s=170667a&w=0&h=Jgu__dDgBqpN4NqN5UE5c-7VJgapIxWVIl19_VLisDY=)" data-picture="url">
+          <div class="card-title">
+          <h4 data-name="高雄願景館">高雄願景館</h4>
+          <p data-district="三民區">三民區</p>
+            </div>
+        </div>
+        <ul class="card-body">
+          <li>
+           <i class="fas fa-clock"></i>
+            <p data-opentime="">週二至週日10:00-18:00，每週一公休</p>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <p data-add="">高雄市三民區建國二路318號</p>
+          </li>
+          <li class="card-footer">
+            <div class="card-footer-item"  data-charge="free">
+            <i class="fas fa-mobile-alt"></i>
+            <p data-tel="">886-7-2363357</p>
+              </div>
+            <div class="card-footer-item">
+              <i class="fas fa-tag"></i>
+              <p data-ticketInfo="">免費入園</p>
+            </div>
+          </li>
+          
+        </ul>
+    </li>
+  </ul>
+  <ul class="pagination-list">
+   <li class="page-item">
+      <a href="#" class="page-link" data-type="page" data-page="prev"><i class="fas fa-angle-left"></i> prev</a>  
+      </li>
+    <li class="page-item">
+      <a href="#" class="page-link active" data-num="num">1</a>
+      </li>
+        <li class="page-item">
+      <a href="#" class="page-link" data-num="num">2</a>
+      </li>
+    <li class="page-item">
+      <a href="#" class="page-link" data-num="num">3</a>
+      </li>
+    <li class="page-item">
+      <a href="#" class="page-link" data-num="num">4</a>
+      </li>
+    <li class="page-item">
+      <a href="#" class="page-link" data-num="num">5</a>
+      </li>
+    <li class="page-item">
+      <a href="#" class="page-link" data-type="page" data-page="next">next <i class="fas fa-angle-right"></i></a>
+      </li>
+  </ul>
+</div>
+
+<div class="footer">
+  <p><a href="#">高雄旅遊網</a></p>
+  <p>資料來源：高雄市政府</p>
+</div>
