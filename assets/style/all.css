@@ -1,0 +1,330 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5; }
+
+a {
+  text-decoration: none;
+  vertical-align: middle; }
+
+img, i {
+  vertical-align: middle; }
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.bg {
+  background-image: url(https://hexschool.github.io/JavaScript_HomeWork/preview/page-1-acknowledgement.png?1632901508706);
+  background-position: center cenet;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 121px; }
+
+.logo {
+  margin-bottom: 96px; }
+  .logo a {
+    display: block;
+    color: #fff;
+    font-size: 40px; }
+
+.select-group {
+  background: rgba(255, 255, 255, 0.7);
+  border: 3px solid #FFFFFF;
+  border-radius: 3px;
+  width: 44%;
+  height: 12.6%;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 1080; }
+
+.tabs-group {
+  position: absolute;
+  bottom: -84px;
+  width: 78%;
+  background-color: #FFF;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  padding-left: 26px; }
+  @media (max-width: 786px) {
+    .tabs-group {
+      bottom: -140px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 16px; } }
+
+.tabs-title {
+  font-size: 18px;
+  margin-bottom: 14px; }
+
+.tabs-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 12px;
+  padding-left: 25px;
+  padding-right: 25px; }
+  .tabs-list li {
+    white-space: nowrap; }
+    .tabs-list li:nth-child(1n) a {
+      background-color: #8A82CC; }
+    .tabs-list li:nth-child(2n) a {
+      background-color: #FFA782; }
+    .tabs-list li:nth-child(3n) a {
+      background-color: #F5D005; }
+    .tabs-list li:nth-child(4n) a {
+      background-color: #559AC8; }
+  .tabs-list a {
+    display: block;
+    padding: 12px 34px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #FFFFFF; }
+
+.hr {
+  width: 88%;
+  margin: 0 auto;
+  border-bottom: 1px dashed #559AC8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 12px; }
+  .hr a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    color: #559AC8;
+    font-size: 24px;
+    background-color: #fff; }
+
+.container {
+  padding-top: 65px;
+  padding-bottom: 39px;
+  padding-left: 40px;
+  padding-right: 40px; }
+
+.subtitle {
+  font-size: 36px;
+  color: #8A82CC;
+  text-align: center;
+  margin-bottom: 24px; }
+
+.card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4%; }
+
+.card {
+  width: 30.3%;
+  margin-bottom: 36px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (max-width: 786px) {
+    .card {
+      width: 45.3%; } }
+  @media (max-width: 576px) {
+    .card {
+      width: 90%; } }
+
+.card-header {
+  padding: 0;
+  height: 137px;
+  background-position: center;
+  background-size: cover;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.card-title {
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 14px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  color: white; }
+  .card-title h4 {
+    font-size: 24px; }
+
+.card-body {
+  padding-top: 15px;
+  padding-bottom: 19px;
+  padding-left: 24px;
+  padding-right: 24px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .card-body li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .card-body li:not(last-child) {
+      margin-bottom: 14px; }
+    .card-body li:nth-child(1n) i {
+      color: #8A82CC; }
+    .card-body li:nth-child(2n) i {
+      color: #FFA782; }
+    .card-body li i {
+      margin-right: 10px;
+      font-size: 18px;
+      text-align: center;
+      width: 18px;
+      height: 18px; }
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .card-footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .card-footer div:nth-child(1n) i {
+    color: #559AC8; }
+  .card-footer div:nth-child(2n) i {
+    color: #F5D005; }
+
+.card-footer-item[data-display*="d-none"] {
+  display: none; }
+
+.pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8px; }
+
+.page-item:not(:last-child) {
+  margin-right: 8px; }
+
+.page-link {
+  display: block;
+  font-size: 14px;
+  color: #4A4A4A;
+  line-height: 17px;
+  padding-left: 5px;
+  padding-right: 5px; }
+  .page-link:disabled {
+    pointer-events: none; }
+  .page-link.active {
+    color: #559AC8; }
+  .page-link[data-type="page"] {
+    font-size: 14px;
+    color: rgba(74, 74, 74, 0.5);
+    pointer-events: none; }
+  .page-link.active[data-type="page"] {
+    font-size: 14px;
+    color: #4A4A4A;
+    pointer-events: auto; }
+
+.footer {
+  background-color: #559AC8;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px; }
+  .footer p {
+    color: #FFD366; }
+  .footer p:first-child {
+    margin-bottom: 15px; }
+  .footer a {
+    color: #fff; }
+
+/*# sourceMappingURL=all.css.map */
