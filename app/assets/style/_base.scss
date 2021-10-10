@@ -50,7 +50,7 @@ a{
     text-decoration: none;
     vertical-align: middle;
 }
-i{
+img, i{
     vertical-align: middle;
 }
 input:focus, input:active{
@@ -58,4 +58,10 @@ input:focus, input:active{
 }
 *, *::before, *::after{
  	box-sizing: border-box;
+}
+
+body{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
 }
