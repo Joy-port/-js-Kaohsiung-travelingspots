@@ -1,6 +1,5 @@
 "use strict";
 
-//AOS
 AOS.init({
   once: true,
   offset: 50
