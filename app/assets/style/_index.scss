@@ -192,10 +192,14 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
+    gap: 0.5rem;
     
     color:white;
     h4{
       font-size: 24px;
+    }
+    p{
+      white-space: nowrap;
     }
   }
   
@@ -241,6 +245,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
     
     div{
       display: flex;
@@ -250,9 +256,9 @@
     & div:nth-child(1n) i{
         color: #559AC8;
      }
-      & div:nth-child(2n) i{
-        color:#F5D005;
-     }
+    & div:nth-child(2n) i{
+          color:#F5D005;
+    }
   }
   
   .card-footer-item{
