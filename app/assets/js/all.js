@@ -1,12 +1,8 @@
-//AOS
-
 AOS.init({
   once:true,
   offset: 50,
 });
 AOS.refresh();
-
-
 
 const url = "https://raw.githubusercontent.com/hexschool/KCGTravel/master/datastore_search.json";
 const cardList = document.querySelector(".card-list");
