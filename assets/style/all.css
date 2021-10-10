@@ -251,9 +251,12 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  gap: 0.5rem;
   color: white; }
   .card-title h4 {
     font-size: 24px; }
+  .card-title p {
+    white-space: nowrap; }
 
 .card-body {
   padding-top: 15px;
@@ -302,7 +305,10 @@ body {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  gap: 0.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .card-footer div {
     display: -webkit-box;
     display: -ms-flexbox;

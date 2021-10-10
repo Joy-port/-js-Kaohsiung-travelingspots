@@ -88,11 +88,10 @@ function switchDataTabs(e) {
 
   ;
   var chosenTab = e.target.dataset.district;
-  var filterData = [];
   dataFilter(chosenTab); // 切換分頁
 
-  if (tag.dataset.type === 'page' || tag.dataset.type === "num") {
-    var _page2 = tag.dataset.page;
+  if (e.target.dataset.type === 'page' || e.target.dataset.type === "num") {
+    var _page2 = e.target.dataset.page;
     var title = subtitle.textContent;
     dataFilter(title);
     pagination(dataFilter(title), _page2);
@@ -106,8 +105,7 @@ function pagination(data, nowPage) {
   var dataTotal = data.length;
   var showPerPage = 6; // 可能會有餘數-> 無條件進位
 
-  var pageTotal = Math.ceil(dataTotal / showPerPage); //console.log(`全部資料:${dataTotal} 每一頁顯示:${showPerPage}筆 總頁數:${pageTotal}`);
-
+  var pageTotal = Math.ceil(dataTotal / showPerPage);
   var currentPage = nowPage; // 當"當前頁數"比"總頁數"大的時候，"當前頁數"就等於"總頁數"
 
   if (currentPage > pageTotal) {
@@ -122,8 +120,7 @@ function pagination(data, nowPage) {
 
   data.forEach(function (item, index) {
     // 獲取陣列索引，但因為索引是從 0 開始所以要 +1。
-    var num = index + 1; // 這邊判斷式會稍微複雜一點
-    // 當 num 比 minData 大且又小於 maxData 就push進去新陣列。
+    var num = index + 1;
 
     if (num >= minData && num <= maxData) {
       currentPageData.push(item); //用來篩選的陣列
